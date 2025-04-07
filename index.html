@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <!-- daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex justify-end">
+      <div class="mockup-phone border-primary">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display">
+          <div class="hero bg-base-300 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse w-[90%]">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Phone Number</label>
+                    <input
+                      type="number"
+                      id="phone-number"
+                      class="input"
+                      placeholder="Enter your phone number"
+                    />
+                    <label class="fieldset-label">pin</label>
+                    <input
+                      type="password"
+                      id="pin-number"
+                      class="input"
+                      autocomplete="off"
+                      placeholder="Enter your pin"
+                    />
+                    <div><a class="link link-hover">Forgot pin?</a></div>
+                    <button id="button-login" class="btn btn-neutral mt-4">
+                      Login
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
