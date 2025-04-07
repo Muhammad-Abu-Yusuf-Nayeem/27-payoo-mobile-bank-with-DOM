@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>payoo home page</title>
+    <title>Payoo MFS</title>
+    <!-- daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1>welcome to payoo home page</h1>
+    <div class="flex justify-end">
+      <div class="mockup-phone border-primary">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display bg-slate-200 pt-28">
+          <!-- available balance -->
+          <div class="stats shadow flex mx-[25%] w-1/2">
+            <div class="stat flex justify-center items-center flex-col">
+              <div id="account-Balance" class="stat-value">9400</div>
+              <div class="stat-desc">Available Balance</div>
+            </div>
+          </div>
+          <!-- divider -->
+          <div class="divider"></div>
+          <!-- user action buttons -->
+          <div class="flex justify-center gap-2">
+            <button class="btn btn-lg bg-slate-400 rounded-lg">
+              Add monery
+            </button>
+            <button class="btn btn-lg bg-slate-400 rounded-lg">Cash out</button>
+          </div>
+          <!-- divider -->
+          <div class="divider"></div>
+          <!-- Add money -->
+          <div
+            class="card bg-base-100 w-[90%] shadow-2xl m-auto mt-5 rounded-lg"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Amount</label>
+                <input
+                  type="number"
+                  class="input"
+                  id="input-add-money"
+                  placeholder="Amount"
+                />
+                <label class="fieldset-label">Pin</label>
+                <input type="password" id="input-pin-number" class="input" placeholder="Pin Number" />
+                <button id="btn-add-money" class="btn btn-neutral mt-4">
+                  Add money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/home.js"></script>
   </body>
 </html>
